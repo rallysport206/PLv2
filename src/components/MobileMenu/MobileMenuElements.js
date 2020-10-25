@@ -13,9 +13,9 @@ export const MobileMenuContainer = styled.div`
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
-    /* opacity: ${({isOpen}) => (isOpen ? '100' : '0')};
-    top:${({isOpen}) => (isOpen ? '0' : '-100')}; */
-    top: 0;
+    opacity: ${({isOpen}) => (isOpen ? '100' : '0')};
+    top:${({isOpen}) => (isOpen ? '0' : '-100')};
+
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -50,16 +50,16 @@ export const MobileMenuItems = styled.ul`
 export const MobileMenuLinks = styled(LinkS)`
     color: #fff;
     display: flex;
-    align-items: center:
+    align-items: center;
     justify-content: center;
-    front-size: 1.5rem;
+    font-size: 2rem;
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 
     &:hover {
-       color: #01bf71;
+       color: #1f7ac5;
        transition: 0.2s ease-in-out; 
     }
 `;

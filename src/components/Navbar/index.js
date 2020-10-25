@@ -15,7 +15,7 @@ function Navbar (){
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>TestNav</NavLogo>
+                    <NavLogo to='/'>Paint Logic</NavLogo>
                     <MobileMenu>
                         <GiHamburgerMenu />
                     </MobileMenu>

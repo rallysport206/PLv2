@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaBars} from 'react-icons/fa';
+import {GiHamburgerMenu} from 'react-icons/gi';
 import {
     Nav, 
     NavbarContainer, 
@@ -17,11 +17,17 @@ function Navbar (){
                 <NavbarContainer>
                     <NavLogo to='/'>TestNav</NavLogo>
                     <MobileMenu>
-                        <FaBars />
+                        <GiHamburgerMenu />
                     </MobileMenu>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about">About</NavLinks>
+                            <NavLinks to="about">About Us</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="pricing">Pricing</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="contact">Contact</NavLinks>
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {Link as LinkS} from 'react-scroll';
 import {FaTimes} from 'react-icons/fa';
 
-export const MobileMenuContainer = styled.div`
+export const MobileMenuContainer = styled.aside`
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -56,6 +56,7 @@ export const MobileMenuLinks = styled(LinkS)`
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;
+    text-decoration: none;
     cursor: pointer;
 
     &:hover {

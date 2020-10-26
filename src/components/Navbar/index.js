@@ -10,13 +10,13 @@ import {
     NavLinks
 } from './navElements';
 
-function Navbar(){
+const Navbar = ({toggle}) => {
     return(
         <>
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'>Paint Logic</NavLogo>
-                    <MobileMenu>
+                    <MobileMenu onClick={toggle}>
                         <GiHamburgerMenu />
                     </MobileMenu>
                     <NavMenu>

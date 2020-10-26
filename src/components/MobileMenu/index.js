@@ -8,24 +8,18 @@ import {
     MobileMenuLinks
 } from './MobileMenuElements'
 
-function MobileMenu(){
+const MobileMenu = ({isOpen, toggle}) => {
     return(
         <>
-            <MobileMenuContainer>
-                <Icon>
+            <MobileMenuContainer isOpen={isOpen} onClick={toggle}>
+                <Icon onClick={toggle}>
                     <CloseIcon />
                 </Icon>
                 <MobileMenuWrapper>
                     <MobileMenuItems>
-                        <MobileMenuLinks to="about">
-                            About Us
-                        </MobileMenuLinks>
-                        <MobileMenuLinks to="prices">
-                            Prices
-                        </MobileMenuLinks>
-                        <MobileMenuLinks to="contact">
-                            Contact Us
-                        </MobileMenuLinks>
+                        <MobileMenuLinks to="about" onClick={toggle}>About Us</MobileMenuLinks>
+                        <MobileMenuLinks to="prices" onClick={toggle}>Prices</MobileMenuLinks>
+                        <MobileMenuLinks to="contact" onClick={toggle}>Contact Us</MobileMenuLinks>
                     </MobileMenuItems>
                 </MobileMenuWrapper>
             </MobileMenuContainer>

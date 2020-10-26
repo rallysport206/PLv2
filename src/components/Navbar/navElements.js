@@ -39,7 +39,7 @@ export const NavLogo = styled(LinkR)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
-    cursor: pointer
+    cursor: pointer;
 `;
 
 export const MobileMenu = styled.div`
@@ -71,7 +71,6 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 80px;
-
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -83,7 +82,7 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer;
 
-    &.active{
+    &:active{
         border-bottom: 3px solid #01bf71;
     }
 `;

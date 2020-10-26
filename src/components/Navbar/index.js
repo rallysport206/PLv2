@@ -10,7 +10,7 @@ import {
     NavLinks
 } from './navElements';
 
-function Navbar (){
+function Navbar(){
     return(
         <>
             <Nav>
@@ -23,11 +23,11 @@ function Navbar (){
                         <NavItem>
                             <NavLinks to="about">About Us</NavLinks>
                         </NavItem>
+                            <NavLinks to="contact">Contact</NavLinks>
                         <NavItem>
                             <NavLinks to="pricing">Pricing</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="contact">Contact</NavLinks>
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>

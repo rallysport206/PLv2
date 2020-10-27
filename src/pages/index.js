@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
+import HeroSection from '../components/HeroSection';
 import MobileMenu from '../components/MobileMenu';
 import Navbar from '../components/Navbar';
 
-function Home(){
+const Home = () => {
     const [isOpen, statusIsOpen] = useState(false);
 
     const toggle = () => {
@@ -13,6 +14,7 @@ function Home(){
         <>
             <MobileMenu isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
+            <HeroSection />
         </>
     )
 }

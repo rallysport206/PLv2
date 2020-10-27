@@ -42,8 +42,8 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroCompany = styled.h1`
-    color: #000;
-    font-size: 48px;
+    color: #fff;
+    font-size: 68px;
     text-align: center;
 
     @media screen and (max-width: 760px){
@@ -55,4 +55,18 @@ export const HeroCompany = styled.h1`
     }
 `;
 
-export const 
+export const CompanyP = styled.p`
+    margin-top: 24px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    max-width: 600px;
+
+    @media screen and (max-width: 760px){
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 480px){
+        font-size: 18px;
+    }
+`;

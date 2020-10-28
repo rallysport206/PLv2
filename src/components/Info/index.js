@@ -1,9 +1,23 @@
 import React from 'react';
+import{
+    InfoContainer,
+    InfoWrapper,
+    InfoRow,
+    Column1,
+    Column2,
+    TextWrapper,
+    TopLine,
+    Heading,
+    Subtitle,
+    ImgWrap,
+    Img
+} from './InfoElements'
+
 
 const Info = () => {
     return(
         <>
-            <InfoContainer id={id}>
+            <InfoContainer>
                 <InfoWrapper>
                     <InfoRow>
                         <Column1>
@@ -13,6 +27,11 @@ const Info = () => {
                             <Subtitle>Subtitle</Subtitle>
                         </TextWrapper>
                         </Column1>
+                        <Column2>
+                            <ImgWrap>
+                            <Img />
+                            </ImgWrap>
+                        </Column2>
                     </InfoRow>
                 </InfoWrapper>
             </InfoContainer>

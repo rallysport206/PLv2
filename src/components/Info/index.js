@@ -14,22 +14,22 @@ import{
 } from './InfoElements'
 
 
-const Info = () => {
+const Info = ({lightBg, id, imgStart, headline, lightText, darkText, description, img, alt, topLine}) => {
     return(
         <>
-            <InfoContainer>
+            <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
-                    <InfoRow>
+                    <InfoRow imgStart={imgStart}>
                         <Column1>
                         <TextWrapper>
-                            <TopLine>TopLine</TopLine>
-                            <Heading>Heading</Heading>
-                            <Subtitle>Subtitle</Subtitle>
+                            <TopLine>{topLine}</TopLine>
+                            <Heading lightText={lightText}>{headline}</Heading>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
                         </TextWrapper>
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                            <Img />
+                            <Img src={img} alt={alt}/>
                             </ImgWrap>
                         </Column2>
                     </InfoRow>

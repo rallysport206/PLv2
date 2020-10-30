@@ -59,6 +59,7 @@ export const TopLine = styled.p`
 `;
 
 export const Heading = styled.h1`
+    color: #000;
     margin-bottom: 24px;
     font-size: 48px;
     line-height: 1.1;
@@ -87,4 +88,4 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
-`
+`;

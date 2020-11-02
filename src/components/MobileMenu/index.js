@@ -10,7 +10,7 @@ import {
 
 const MobileMenu = ({isOpen, toggle}) => {
     return(
-        <MobileMenuContainer isOpen={isOpen} onClick={toggle}>
+        <MobileMenuContainer isOpen={isOpen}>
             <Icon onClick={toggle}>
                 <CloseIcon />
             </Icon>

@@ -4,8 +4,7 @@ import {FaTimes} from 'react-icons/fa';
 
 export const MobileMenuContainer = styled.aside`
     display: none;
-    @media screen and (max-width: 480px) {
-        position: fixed;
+    position: fixed;
     z-index: 999;
     width: 100%;
     height: 100%;
@@ -16,7 +15,8 @@ export const MobileMenuContainer = styled.aside`
     transition: 0.3s ease-in-out;
     opacity: ${({isOpen}) => (isOpen ? '100' : '0')};
     top:${({isOpen}) => (isOpen ? '0' : '-100')};
-        display: grid;
+    @media screen and (max-width: 480px) {
+        display: block;
     }
 `;
 

@@ -17,7 +17,7 @@ const Home = () => {
             <MobileMenu isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection />
-            {/* <Info {...homeObjOne} /> */}
+            <Info {...homeObjOne} />
         </>
     )
 }

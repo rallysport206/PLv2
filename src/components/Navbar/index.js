@@ -1,6 +1,6 @@
 import React from 'react';
 import {GiHamburgerMenu} from 'react-icons/gi';
-import './navElements.css'
+import './navStyling.css'
 
 const Navbar = ({toggle}) => {
     return(

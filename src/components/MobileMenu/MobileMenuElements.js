@@ -3,7 +3,8 @@ import {Link as LinkS} from 'react-scroll';
 import {FaTimes} from 'react-icons/fa';
 
 export const MobileMenuContainer = styled.aside`
-    display: none;
+    background: green;
+    display: block;
     position: fixed;
     z-index: 999;
     width: 100%;

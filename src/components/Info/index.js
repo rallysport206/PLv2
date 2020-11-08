@@ -14,7 +14,9 @@ import{
 } from './InfoElements'
 
 
-const Info = ({lightBg, id, imgStart, headline, lightText, darkText, description, img, alt, topLine}) => {
+const Info = ({lightBg, id, imgStart, headline, lightText, darkText, description, img, alt, 
+topLine
+}) => {
     return(
         <>
             <InfoContainer lightBg={lightBg} id={id}>

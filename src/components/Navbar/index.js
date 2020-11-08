@@ -1,36 +1,28 @@
 import React from 'react';
 import {GiHamburgerMenu} from 'react-icons/gi';
-import {
-    Nav, 
-    NavbarContainer, 
-    NavLogo, 
-    MobileMenu, 
-    NavMenu, 
-    NavItem, 
-    NavLinks
-} from './NavElements';
+import './navElements.css'
 
 const Navbar = ({toggle}) => {
     return(
-        <>
-            <Nav>
-                <NavbarContainer>
-                    <NavLogo to='/'>Paint Logic</NavLogo>
-                    <MobileMenu onClick={toggle}>
-                        <GiHamburgerMenu />
-                    </MobileMenu>
-                    <NavMenu>
-                        <NavItem>
-                            <NavLinks to="about">About Us</NavLinks>
-                        </NavItem>
-                            <NavLinks to="contact">Contact</NavLinks>
-                        <NavItem>
-                            <NavLinks to="pricing">Pricing</NavLinks>
-                        </NavItem>
-                    </NavMenu>
-                </NavbarContainer>
-            </Nav>
-        </>
+        <div className='nav'>
+            <div className='navbarContainer'>
+                <div className='navLogo' href='/'>Paint Logic</div>
+                <div className='mobileMenu' onClick={toggle}>
+                    <GiHamburgerMenu />
+                </div>
+                <div>
+                </div>
+                <ul className='navMenu'>
+                    <li className='navItem'>
+                        <a href="about" className='navLinks'>About Us</a>
+                    </li>
+                        <a href="contact" className='navLinks'>Contact</a>
+                    <li className='navItem'>
+                        <a href="pricing" className='navLinks'>Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     );
 };
 

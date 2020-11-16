@@ -1,13 +1,14 @@
 import React from 'react';
-import {FaTimes} from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
+import { CgClose } from 'react-icons/cg'
 import './mobileMenuStyling.css'
 
-const MobileMenu = ({isOpen, toggle}) => {
+const MobileMenu = ({isMenuOpen, toggle}) => {
     return(
         <>
-            <aside className={`menu-section__content ${isOpen ? 'menu-section__content--open' : ''}`} isOpen={isOpen} onClick={toggle}>
+            <aside className={`menu-section__content ${isMenuOpen ? 'menu-section__content--open' : ''}`} onClick={toggle}>
                 <div className='menu-section__icon' onClick={toggle}>
-                    <FaTimes />
+                    {isMenuOpen ? <CgClose /> : <FaTimes />}
                 </div>
                 <div className='menu-section__items-wrapper'>
                     <ul className='menu-section__items'>

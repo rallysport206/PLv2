@@ -14,17 +14,19 @@
 }
 
 .menu-section__content--open {
+    display: block;
     opacity: 100;
     top: -100;
 }
 
 @media screen and (max-width: 480px) {
-    ..menu-section__content{
+    .menu-section__content{
         display: block;
     }
 }
 
 .menu-section__icon{
+    color: white;
     position: absolute;
     top: 1.2rem;
     right: 1.5rem;

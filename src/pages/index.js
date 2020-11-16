@@ -4,21 +4,23 @@ import Info from '../components/Info';
 import MobileMenu from '../components/MobileMenu';
 import Navbar from '../components/Navbar';
 import Services from '../components/Services';
+import Footer from '../components/Footer';
 
 const Home = () => {
-    const [isOpen, statusIsOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggle = () => {
-        statusIsOpen(!isOpen)
+        setIsMenuOpen(!isMenuOpen)
     };
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <MobileMenu isOpen={isOpen} toggle={toggle} />
+            <MobileMenu isMenuOpen={isMenuOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection />
             <Info />
             <Services />
+            <Footer />
         </div>
     )
 }

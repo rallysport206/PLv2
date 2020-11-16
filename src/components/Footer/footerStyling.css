@@ -1,0 +1,37 @@
+.footer-content {
+    background-color: rgb(223, 223, 124);
+}
+
+.footer-menu {
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-items {
+    display: flex;
+}
+@media screen and (max-width: 820) {
+    .footer-items{
+        flex-direction: column;
+    }
+}
+
+.footer-links {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 48px;
+    padding: 50px;
+}
+
+.footer-links:hover {
+    color: blue;
+    transition: 0.3s ease-out;
+}
+
+

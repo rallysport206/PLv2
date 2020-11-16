@@ -1,27 +1,23 @@
 import React from 'react';
-import {
-    MobileMenuContainer, 
-    Icon, 
-    CloseIcon,
-    MobileMenuWrapper,
-    MobileMenuItems,
-    MobileMenuLinks
-} from './MobileMenuElements'
+import {FaTimes} from 'react-icons/fa';
+import './mobileMenuStyling.css'
 
 const MobileMenu = ({isOpen, toggle}) => {
     return(
-        <MobileMenuContainer isOpen={isOpen} onClick={toggle}>
-            <Icon onClick={toggle}>
-                <CloseIcon />
-            </Icon>
-            <MobileMenuWrapper>
-                <MobileMenuItems>
-                    <MobileMenuLinks to="about" onClick={toggle}>About Us</MobileMenuLinks>
-                    <MobileMenuLinks to="prices" onClick={toggle}>Prices</MobileMenuLinks>
-                    <MobileMenuLinks to="contact" onClick={toggle}>Contact Us</MobileMenuLinks>
-                </MobileMenuItems>
-            </MobileMenuWrapper>
-        </MobileMenuContainer>
+        <>
+            <aside className={`menu-section__content ${isOpen ? 'menu-section__content--open' : ''}`} isOpen={isOpen} onClick={toggle}>
+                <div className='menu-section__icon' onClick={toggle}>
+                    <FaTimes />
+                </div>
+                <div className='menu-section__items-wrapper'>
+                    <ul className='menu-section__items'>
+                        <a className='menu-section__links' href="about" onClick={toggle}>About Us</a>
+                        <a className='menu-section__links' href="prices" onClick={toggle}>Prices</a>
+                        <a className='menu-section__links' href="contact" onClick={toggle}>Contact Us</a>
+                    </ul>
+                </div>
+            </aside>
+        </>    
     );
 };
 

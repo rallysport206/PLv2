@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import HeroSection from '../components/HeroSection';
 import Info from '../components/Info';
-import { homeObjOne } from '../components/Info/Data';
 import MobileMenu from '../components/MobileMenu';
 import Navbar from '../components/Navbar';
+import Services from '../components/Services';
 
 const Home = () => {
     const [isOpen, statusIsOpen] = useState(false);
@@ -13,12 +13,13 @@ const Home = () => {
     };
 
     return (
-        <>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
             <MobileMenu isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection />
-            <Info {...homeObjOne} />
-        </>
+            <Info />
+            <Services />
+        </div>
     )
 }
 

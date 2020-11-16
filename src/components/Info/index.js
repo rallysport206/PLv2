@@ -1,43 +1,17 @@
 import React from 'react';
-import{
-    InfoContainer,
-    InfoWrapper,
-    InfoRow,
-    Column1,
-    Column2,
-    TextWrapper,
-    TopLine,
-    Heading,
-    Subtitle,
-    ImgWrap,
-    Img
-} from './InfoElements'
+import './infoStyling.css';
 
 
-const Info = ({lightBg, id, imgStart, headline, lightText, darkText, description, img, alt, 
-topLine
-}) => {
+const Info = () => {
     return(
-        <>
-            <InfoContainer lightBg={lightBg} id={id}>
-                <InfoWrapper>
-                    <InfoRow imgStart={imgStart}>
-                        <Column1>
-                        <TextWrapper>
-                            <TopLine>{topLine}</TopLine>
-                            <Heading lightText={lightText}>{headline}</Heading>
-                            <Subtitle darkText={darkText}>{description}</Subtitle>
-                        </TextWrapper>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                            <Img src={img} alt={alt}/>
-                            </ImgWrap>
-                        </Column2>
-                    </InfoRow>
-                </InfoWrapper>
-            </InfoContainer>
-        </>
+        <div className='info-section__container'>
+            <div className='info-section__photo' />
+            <div className='info-section__content'>
+                <p className="info-section__topline">Offering premium quality paint restoration in the Seattle area for over 15 years!</p>
+                <h2 className='info-section__headline'>Providing paint and minor body repairs at a lower cost than a body shop with the same high quality and attention to detail. Services include: paint repair from door dings, bumper scuffs, rock chip/road debris removal, curbed wheel repair, insurance claims, and more!</h2>
+                <p className='info-section__subtitle'>Guaranteed Quick Service – Free Estimates – Most Repairs Take One Day!</p>
+            </div>
+        </div>
     )
 };
 

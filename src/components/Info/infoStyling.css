@@ -1,95 +1,70 @@
-
-.info.container{
-    color: #fff;
+ 
+.info-section__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 3rem;
+    flex-direction: row;
 }
 
  @media screen and (max-width: 768px) {
-    .info.container{
-        padding: 100px 0;
+    .info-section__container{
+        flex-direction: column;
+        padding: 3rem 1rem;
     }
 }
 
-.info-wrapper{
-    display: grid;
-    z-index: 1;
-    height: 860px;
-    width: 100%;
-    max-width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 24px;
-    justify-content: center;
+.info-section__photo {
+    width: 50%;
+    background: pink;
+    height: 500px;
+    max-width: 500px;
+
 }
 
-.info-row{
-    display: grid;
-    grid-auto-columns: minmax(auto, 1fr);
+.info-section__content {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
     align-items: center;
-    /* grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1` : `'col1 col2'`)}; */
+    text-align: center;
 }
 
-@media screen and (min-max: 768px) {
-    /* grid-template-areas: ${({imgStart}) => (imgStart ? `' col1' 'col2` : `'col1 col1' 'col2 col2`)}; */
-}
-
-.column1{
-    margin-bottom: 15px;
-    padding: 0 15px;
-    grid-area: col1;
-}
-
-.column2{
-    margin-bottom: 15px;
-    padding: 0 15px;
-    grid-area: col2;
-}
-
-.text-wrapper{
-    max-width: 540px;
-    padding-top: 0;
-    padding-bottom: 60px;
-}
-
-.topline{
-    color: #01bf71;
-    font-size: 16px;
-    line-height: 16px;
+.info-section__topline {
+    color: #3F51B5;
+    font-size: 20px;
+    line-height: inherit;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+
 }
 
-h2{
+@media screen and (max-width: 480px) {
+    .info-section__topline{
+        font-size: 16px;
+    }    
+}
+
+.info-section__headline {
     color: #000;
     margin-bottom: 24px;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
     /* color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')}; */
 }
 
-@media screen and (max-width: 480px){
-    h2{
+@media screen and (max-width: 480px) {
+    .info-section__headline{
         font-size: 32px;
     }
 }
 
-.subtitle{
+.info-section__subtitle {
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 24px;
-    /* color: ${({darkText}) => (darkText ? '#010606' : '#fff')}; */
-}
-
-.img-wrap{
-    max-width: 555px;
-    height: 100%;
-}
-
-img{
-    width: 100%;
-    margin: 0 0 10px 0;
-    padding-right: 0;
 }

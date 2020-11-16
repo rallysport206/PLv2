@@ -1,4 +1,4 @@
-.nav{
+.navbar-section {
     background-color: #000;
     height: 80px;
     /* margin-top: -80px; */
@@ -11,13 +11,13 @@
     z-index: 10;
 }
 
-@media screen and (max-width: 960px){
-    .nav{
+@media screen and (max-width: 960px) {
+    .navbar-section {
         transition: 0.8s all ease;
     }
 }
 
-.navbarContainer{ 
+.navbar-section__content { 
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -27,7 +27,7 @@
     max-width: 1100px;
 }
 
-.navLogo{
+.navbar-section__icon {
     color: #fff;
     justify-self: flex-start;
     font-size: 1.5rem;
@@ -39,12 +39,12 @@
     cursor: pointer;
 }
 
-.mobileMenu{
+.navbar-section__menu-mobile {
     display: none;
 }
 
-@media screen and (max-width: 768px){
-    .mobileMenu{
+@media screen and (max-width: 768px) {
+    .navbar-section__menu-mobile {
         display: block;
         position: absolute;
         top: 0;
@@ -56,7 +56,7 @@
     }
 }
 
-.navMenu{
+.navbar-section__menu-nav {
     display: flex;
     align-items: center;
     list-style: none;
@@ -65,17 +65,16 @@
 }
 
 @media screen and (max-width: 768px) {
-    .navMenu{
+    .navbar-section__menu-nav {
         display: none;
     }
 }
 
-.navItem{
+.navbar-section__item {
     height: 80px;
 }
 
-
-.navLinks {
+.navbar-section__links {
     color: #fff;
     display: flex;
     align-items: center;
@@ -85,6 +84,6 @@
     cursor: pointer;
 }
 
-.navLinks:active{
+.navbar-section__links:active{
     border-bottom: 3px solid #01bf71;
 }

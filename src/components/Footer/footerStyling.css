@@ -2,7 +2,7 @@
     background-color: rgb(223, 223, 124);
 }
 
-.footer_wrap{
+.footer_wrap {
     padding: 48px 24px;
     display: flex;
     flex-direction: column;
@@ -51,24 +51,35 @@
     }
 }
 
-.footer-title {
-    margin-bottom: 0.5rem;
-    font-size: 2.3rem;
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    background: green;
 }
 
 .footer-info {
     color: black;
     text-decoration: none;
     margin-bottom: 0.5rem;
-    font-size: 14;
+    font-size: 1.2rem;
 }
-
+/* 
 .footer-info:hover {
     color: blue;
     transition: 0.3s ease-out;
-}
+} */
 
 .footer-media {
     display: flex;
     flex-direction: row;
+    font-size: 1.2rem;
+}
+
+.footer-icon {
+    color: black;
+    margin-right: 0.4rem;
+}
+
+.footer-icon:hover {
+    color: blue;
 }

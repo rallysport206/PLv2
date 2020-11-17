@@ -50,7 +50,7 @@
 .info-section__headline {
     color: #000;
     margin-bottom: 24px;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 1.1;
     font-weight: 600;
     /* color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')}; */

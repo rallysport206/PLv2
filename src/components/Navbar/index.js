@@ -16,9 +16,9 @@ const Navbar = ({toggle}) => {
                     <li className='navbar-section__item'>
                         <a href="about" className='navbar-section__links'>About Us</a>
                     </li>
-                        <a href="contact" className='navbar-section__links'>Contact</a>
+                        <a href="contact" className='navbar-section__links'>Services</a>
                     <li className='navbar-section__item'>
-                        <a href="pricing" className='navbar-section__links'>Pricing</a>
+                        <a href="pricing" className='navbar-section__links'>Contact</a>
                     </li>
                 </ul>
             </div>

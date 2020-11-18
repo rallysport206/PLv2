@@ -8,18 +8,18 @@
     padding: 0 1rem;
 }
 @media screen and (max-width: 768px) {
-    .service-contents{
+    .service-contents {
         height: 1100px;
     }
 };
 
 @media screen and (max-width: 400px) {
-    .service-contents{
+    .service-contents {
         height: 1300px;
     };
 }
 
-.service-intro{
+.service-intro {
     font-size: 3rem;
     padding-bottom: 5rem;
 }
@@ -48,7 +48,7 @@
 .service-card:hover{
     transform: scale(1.02);
     transition: all 0.2 ease-in-out;
-    coursor: pointer;
+    cursor: pointer;
 }
 @media screen and (max-width: 768px) {
     .service-card {
@@ -62,3 +62,9 @@
     }
 }
 
+.service-icons {
+    background: red;
+    height: 160px;
+    width: 160px;
+    margin-bottom: 10px;
+}

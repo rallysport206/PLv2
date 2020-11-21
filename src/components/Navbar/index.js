@@ -1,12 +1,13 @@
 import React from 'react';
 import {GiHamburgerMenu} from 'react-icons/gi';
+import logo from '../../images/pl_logo2.png';
 import './navStyling.css'
 
 const Navbar = ({toggle}) => {
     return(
         <div className='navbar-section'>
             <div className='navbar-section__content'>
-                <div className='navbar-section__icon' href='/'>Paint Logic</div>
+                <img className='navbar-section__icon' src={logo} href='/' />
                 <div className='navbar-section__menu-mobile' onClick={toggle}>
                     <GiHamburgerMenu />
                 </div>

@@ -18,7 +18,7 @@
 }
 
 @media screen and (max-width: 820px) {
-    .footer-menu{ 
+    .footer-menu { 
         padding-top: 32px;
     }
 }
@@ -44,7 +44,7 @@
 }
 
 @media screen and (max-width: 420px) {
-    .footer-items{
+    .footer-items {
         margin: 0;
         padding: 10px;
         width: 100%;
@@ -81,5 +81,6 @@
 }
 
 .footer-icon:hover {
+    transition: all 0.2 ease-in-out;
     color: blue;
 }

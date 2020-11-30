@@ -7,7 +7,7 @@ const Navbar = ({toggle}) => {
     return(
         <div className='navbar-section'>
             <div className='navbar-section__content'>
-                <img className='navbar-section__icon' src={logo} href='/' />
+                <img className='navbar-section__icon' src={logo} href='/' alt='paint logic logo'/>
                 <div className='navbar-section__menu-mobile' onClick={toggle}>
                     <GiHamburgerMenu />
                 </div>

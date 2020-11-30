@@ -1,10 +1,11 @@
 .navbar-section {
-    background-color: #fff;
+    background-color: #000;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+    font-weight: bold;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -74,7 +75,7 @@
 }
 
 .navbar-section__links {
-    color: #000000;
+    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;

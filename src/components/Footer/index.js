@@ -6,7 +6,7 @@ import { FiMail } from 'react-icons/fi'
 const Footer = () => {
     return(
         <>
-            <footer className='footer-content'>
+            <footer className='footer-content' id='contact'>
                 <div className='footer-wrap'> 
                     <div className='footer-menu'>
                         <div className='footer-links__wrap'>

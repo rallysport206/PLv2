@@ -2,11 +2,10 @@ import React from 'react';
 import img from '../../images/feature3.png';
 import './infoStyling.css';
 
-
 const Info = () => {
     return(
         <>
-            <div className='info-section__container'>
+            <div className='info-section__container' id='about'>
                 <div className='info-section__wrapper'>
                     <img src={img} alt='car' className='info-section__photo' />
                     <div className='info-section__content'>

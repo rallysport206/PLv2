@@ -4,7 +4,7 @@ import './servicesStyling.css'
 const Services = () => {
     return (
         <>
-            <div className='service-contents'>
+            <div className='service-contents' id='services'>
                 <div className='service-intro'>Our Services</div>
                 <div className='service-wrapper'>
                     <div className='service-card'>

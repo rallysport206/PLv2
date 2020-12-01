@@ -5,7 +5,7 @@ import './heroStyling.css';
 const HeroSection = () => {
     return (
         <div className='hero-section__content'>
-            <div className='hero-section__background'>
+            <div className='hero-section__background'id='hero'>
                 <video className='hero-section__video' autoPlay loop muted src={Video} type='video/mp4' />
             </div>
             <div className='content'>

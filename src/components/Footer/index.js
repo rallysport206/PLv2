@@ -1,7 +1,7 @@
 import React from 'react';
 import './footerStyling.css'
 import { FaInstagram, FaFacebook } from 'react-icons/fa'
-import { FiMail } from 'react-icons/fi'
+import { FiMail, FiMapPin} from 'react-icons/fi'
 
 const Footer = () => {
     return(
@@ -26,6 +26,7 @@ const Footer = () => {
                                     <a href='https://instagram.com/petrakis135_paintlogic' className='footer-icon'><FaInstagram /></a>
                                     <a href='https://www.facebook.com/paintlogicseattle' className='footer-icon'><FaFacebook /></a>
                                     <a href="mailto:paintlogic@gmail.com?Subject=Hello%20Paint%20Logic!" className='footer-icon'><FiMail /></a>
+                                    <a href='https://goo.gl/maps/yYiovX9EDXE7sTfH6' className='footer-icon'><FiMapPin /></a>
                                 </div>
                             </div>
                         </div>

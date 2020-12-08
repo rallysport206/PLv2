@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../images/feature3.png';
+import img from '../../images/car2.png';
 import './estimateStyling.css';
 
 const Info = () => {
@@ -9,9 +9,12 @@ const Info = () => {
                 <div className='estimate-section__wrapper'>
                     <img src={img} alt='car' className='estimate-section__photo' />
                     <div className='estimate-section__content'>
-                        <p className="estimate-section__topline">Offering premium quality paint restoration in the Seattle area for over 15 years!</p>
-                        <h2 className='estimate-section__headline'>Providing paint and minor body repairs at a lower cost than a body shop with the same high quality and attention to detail. Services include: paint repair from door dings, bumper scuffs, rock chip/road debris removal, curbed wheel repair, insurance claims, and more!</h2>
-                        <p className='estimate-section__subtitle'>Guaranteed Quick Service – Free Estimates – Most Repairs Take One Day!</p>
+                        <h3 className='estimate-section__headline'>Free Estimates</h3>
+                        <p className='estimate-section__subtitle'>- Repair estimates are always free! </p>
+                        <h3 className='estimate-section__headline'>Quality Repairs</h3>
+                        <p className='estimate-section__subtitle'>- Cutting-edge repairs and restoration techniques!</p>
+                        <h3 className='estimate-section__headline'>Guaranteed Quick Service</h3>
+                        <p className='estimate-section__subtitle'>- Most repairs take one day!</p>
                     </div>
                 </div>
             </div>

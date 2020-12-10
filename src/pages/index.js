@@ -6,6 +6,7 @@ import MobileMenu from '../components/MobileMenu';
 import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
+import Slider from '../components/Slider';
 
 const Home = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,6 +23,7 @@ const Home = () => {
             <Info />
             <Estimate />
             <Services />
+            <Slider />
             <Footer />
         </div>
     )

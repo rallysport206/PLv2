@@ -1,9 +1,26 @@
+
 .estimate-section__container {
     background-color: #f8f8ff;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 6rem 7rem;
+}
+
+.each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: cover;
+    width: 45%;
+    height: 80%;
+}
+
+.each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
 }
 
 .estimate-section__wrapper {
@@ -36,9 +53,9 @@
     display: flex;
     width: 50%;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-right: 2em;
+    align-items: flex-end;
+    text-align: right;
+    margin: 4em;
 }
 
 .estimate-section__topline {
@@ -59,8 +76,8 @@
 
 .estimate-section__headline {
     color: #000;
-    margin-bottom: 24px;
-    font-size: 35px;
+    margin-bottom: .3em;
+    font-size: 2.1em;
     line-height: 1.1;
     font-weight: 600;
 }

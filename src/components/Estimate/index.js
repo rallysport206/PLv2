@@ -2,6 +2,8 @@ import React from 'react';
 import img from '../../images/car2.png';
 import './estimateStyling.css';
 
+
+
 const Info = () => {
     return(
         <>

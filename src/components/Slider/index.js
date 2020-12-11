@@ -2,7 +2,12 @@ import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import './sliderStyling.css';
-import * from '../../sliderImg';
+import car1 from '../../sliderImg/sl1.png';
+import car2 from '../../sliderImg/sl2.jpg';
+import car3 from '../../sliderImg/sl3.jpg';
+import car4 from '../../sliderImg/sl4.jpg';
+import car5 from '../../sliderImg/sl5.jpg';
+
 
 const slideImages = [
 //   {img},
@@ -18,40 +23,36 @@ const slideImages = [
   './sliderImg/sl11.jpg'
 ];
 
-function importAll(r) {
-    let images = {};
-    r.keys().map((item,index) => { images[item.replace('./', '')] = r(item); });
-    return images;
-}
+// function importAll(r) {
+//     let images = {};
+//     r.keys().map((item,index) => { images[item.replace('./', '')] = r(item); });
+//     return images;
+// }
 
-const images = importAll(require.context('./images', false, /\.(png|jp?g)$/));
+// const images = importAll(require.context('./images', false, /\.(png|jp?g)$/));
 
 const Slider = () => {
     return (
       <div>
         <Slide easing="ease">
           <div className="each-slide">
-            <div style={{'backgroundImage': `url(${img})`}}>
+            <div style={{'backgroundImage': `url(${car1})`}}>
             </div>
           </div>
           <div className="each-slide">
-            <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
-              <span>Slide 2</span>
+            <div style={{'backgroundImage': `url(${car2})`}}>
             </div>
           </div>
           <div className="each-slide">
-            <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
-              <span>Slide 3</span>
+            <div style={{'backgroundImage': `url(${car3})`}}>
             </div>
           </div>
           <div className="each-slide">
-            <div style={{'backgroundImage': `url(${slideImages[3]})`}}>
-              <span>Slide 4</span>
+            <div style={{'backgroundImage': `url(${car4})`}}>
             </div>
           </div>
           <div className="each-slide">
-            <div style={{'backgroundImage': `url(${slideImages[4]})`}}>
-              <span>Slide 5</span>
+            <div style={{'backgroundImage': `url(${car5})`}}>
             </div>
           </div>
           <div className="each-slide">

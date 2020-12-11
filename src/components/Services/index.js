@@ -43,6 +43,7 @@ const Services = () => {
                         <h3 className='card-headline'>Spot Blend Paint</h3>
                         <p className='card-text'>Repair of small portions of panels: bumpers, doors, hoods, fenders, quarter panels, roof, mirrors, trim</p>
                     </div>
+                    <div className='service-outro'>Other Services Available!</div>
                 </div>
             </div>
         </>

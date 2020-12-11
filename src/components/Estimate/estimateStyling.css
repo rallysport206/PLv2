@@ -7,22 +7,6 @@
     padding: 6rem 7rem;
 }
 
-.each-slide > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: cover;
-    width: 45%;
-    height: 80%;
-}
-
-.each-slide span {
-    padding: 20px;
-    font-size: 20px;
-    background: #efefef;
-    text-align: center;
-}
-
 .estimate-section__wrapper {
     display: flex;
     flex-direction: row-reverse;

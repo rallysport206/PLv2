@@ -34,7 +34,7 @@ const slideImages = [
 const Slider = () => {
     return (
       <div>
-        <Slide easing="ease">
+        <Slide easing="ease" className='slide'>
           <div className="each-slide">
             <div style={{'backgroundImage': `url(${car1})`}}>
             </div>
